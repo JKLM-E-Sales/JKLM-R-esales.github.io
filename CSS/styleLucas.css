@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  border: 1px solid black;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+h1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+#animate {
+  position: absolute;
+  width: 100%;
+  padding-left: 15em;
+  font-weight: bold;
+  font-size: larger;
+}
