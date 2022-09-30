@@ -1,0 +1,13 @@
+div {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  margin-top: 100px;
+}
+#welcomeText {
+  text-align: center;
+  color: red;
+}
+#introText {
+  text-align: center;
+}
