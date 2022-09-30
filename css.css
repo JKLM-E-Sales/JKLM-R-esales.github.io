@@ -1,0 +1,145 @@
+body{
+    background-color: #F7EDF0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 800px;
+}
+
+
+header { 
+    grid-area: header;
+    border: 3px solid #F4CBC6; 
+    border-radius: 8px;
+    text-align: center;
+}
+.navigation {
+    grid-area: menu;
+    border: 3px solid #F4CBC6; 
+    border-radius: 8px;
+}
+
+h1{
+    color: #F4AFAB;
+}
+
+h3{
+    color: #F4AFAB;
+}
+
+
+nav{
+    text-align: center;
+}
+
+nav li{
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav a{
+    text-decoration: none;
+}
+
+a:link {
+    color: #F4AFAB;
+}
+a:visited {
+    color: #F4AFAB;
+}
+
+main { 
+    grid-area: main;
+    text-align: center;
+ }
+.right {
+    grid-area: right;
+    border: 3px solid #F4CBC6; 
+    border-radius: 8px;
+    text-align: center;
+ }
+footer { 
+    grid-area: footer;
+    text-align: center;
+    border: 3px solid #F4CBC6;
+    border-radius: 8px;
+ }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header header header header'
+      'menu main main main main right right right right '
+      'menu main main main main right right right right'
+      'menu footer footer footer footer footer footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 80%; 
+  }
+
+.box{
+    text-align: center;
+    
+}
+
+.box img{
+    position: relative;
+    width: 95%;
+    height: auto;
+    
+}
+
+#animation{
+    animation-duration: 3s;
+    animation-name: left-right;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes left-right {
+    from {
+      margin-left: 60%;
+      width: 60%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 20%;
+    }
+  }
+@media only screen and (max-width: 767px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header'
+          'menu '
+          'main'
+          'right'
+          'footer';
+        grid-gap: 10px;
+        padding: 10px;
+    
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'menu menu '
+          'main right'
+          'main right'
+          'footer footer';
+        grid-gap: 10px;
+        padding: 10px;
+    
+    }
+    
+}
