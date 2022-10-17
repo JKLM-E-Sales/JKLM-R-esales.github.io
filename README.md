@@ -4,6 +4,10 @@
 ## *README*
 ---
 
+### Deployment
+
+https://jklm-e-sales.github.io/JKLM-R-esales.github.io/
+
 ### Team       
 
 **Mark Danskin** - Development Coordinator
