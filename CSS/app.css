@@ -215,41 +215,6 @@ header a {
 /* Free to use under the Unsplash License */
 
 
-.bio-container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 1.5rem;
-    max-width: 1200px;
-}
-
-.bio-row {
-    display: flex;
-    flex-direction: column;
-}
-
-.bio {
-    box-sizing: border-box;
-    padding: 1rem;
-}
-
-.bio div{
-    padding: 0.5rem 1rem;
-}
-
-.bio div p {
-    padding-top: 0.7rem;
-}
-
-.bio div p:last-of-type {
-    padding-bottom: 0.7rem;
-}
-
-.bio div a {
-    color: rgb(0, 184, 184);
-}
-
 .hyphen {
     color: #ffa94e;
 }

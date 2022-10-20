@@ -1,0 +1,65 @@
+h2 {
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+}
+
+.bio-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    max-width: 1200px;
+}
+
+.bio-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio {
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.bio div{
+    padding: 0.5rem 1rem;
+}
+
+.bio div p {
+    padding-top: 0.7rem;
+}
+
+.bio div p:last-of-type {
+    padding-bottom: 0.7rem;
+}
+
+.bio div a {
+    color: #EF6351;
+}
+
+
+@media (min-width: 821px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .bio-row {
+        flex-direction: row;
+    }
+    .bio {
+        width: 50%;
+    }
+}
+@media (min-width: 1150px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+.animation {
+    transition: 1s all;
+}
+
+.color {
+    color: #EF6351;
+}
