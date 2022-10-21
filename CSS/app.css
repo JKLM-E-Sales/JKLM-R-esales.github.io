@@ -208,7 +208,8 @@ header a {
     background-repeat: no-repeat;
     background-position: top;
     font-family: 'Roboto', sans-serif;
-    background-image: url("../assets/images/Cranes.JPG");
+    /* background-image: url("../assets/images/Cranes.JPG"); */
+    background-image: url("https://images.unsplash.com/photo-1592395699868-81e39aa28881?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
 }
 
 /* Photo: https://unsplash.com/photos/M6XsJwIi6jg */
