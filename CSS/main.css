@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
-
 /* ----------------------------------------General------------------------------------------- */
 
 html {
-    height: 100%
+    height: 100%;
 }
 
 body {
@@ -23,12 +22,15 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 2rem;
+    padding: 5rem;
     box-sizing: border-box;
     margin-bottom: auto;
+    gap: 2rem;
 }
 
 nav a {
@@ -49,13 +51,12 @@ nav ul a:hover {
 }
 
 .top-bar a:hover {
-    color: #EF6351;
+    color: #ef6351;
 }
 
 a {
     text-decoration: none;
 }
-
 
 h1 {
     width: 100%;
@@ -79,7 +80,7 @@ h1 {
     width: 100%;
 }
 
-.social{
+.social {
     display: flex;
     align-items: center;
 }
@@ -98,18 +99,15 @@ h1 {
 }
 
 #logo:hover {
-    color: #EF6351;
+    color: #ef6351;
 }
 
-
 /* Header & Footer */
-
 
 header {
     margin-bottom: 2rem;
     background-color: #f7f7f7;
 }
-
 
 header nav ul {
     display: flex;
@@ -128,9 +126,8 @@ header nav ul li {
     font-size: 1.2rem;
 }
 
-
 .bottom-bar {
-    margin-top: 13rem; 
+    margin-top: 13rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,27 +168,144 @@ header nav ul li {
     letter-spacing: 0.3rem;
 }
 
-
 .footer-nav li {
     margin: 1rem;
 }
 
-.footer-nav a:visited, .footer-nav a{
+.footer-nav a:visited,
+.footer-nav a {
     color: black;
 }
 
 .footer-nav a:hover {
     border-bottom: 1px solid black;
 }
+/* ----------------------------------------Cards------------------------------------------- */
 
+.card {
+    transition: 0.5s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f0f0;
+    border: 1px solid #f1f0f0;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.card p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.card h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.pageNav {
+    margin-top: 0;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+.prevPage:hover,
+.nextPage:hover {
+    color: #ef6351;
+    cursor: pointer;
+}
+
+.overlay {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7da;
+}
+
+.details {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f0f0;
+    border: 1px solid #f1f0f0;
+    padding: 1rem;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.details p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.details h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.details a {
+    padding-right: 0.5rem;
+}
+
+.exitButton {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-start;
+    font-size: 50px;
+}
+
+.exitButton:hover {
+    color: #ef6351;
+    cursor: pointer;
+}
+
+hr {
+    border: 0;
+    width: 99%;
+    background-color: black;
+    height: 1px;
+}
+
+.title {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoContainer {
+    padding: 0 0.5rem;
+}
+
+.sale {
+    color: rgb(193, 42, 72);
+}
 
 /* ----------------------------------------Media------------------------------------------- */
 
-
-
-
-@media (min-width:821px) {
-
+@media (min-width: 821px) {
     .footer-nav {
         text-align: left;
     }
@@ -207,7 +321,6 @@ header nav ul li {
     }
 
     header nav ul li {
-
     }
 
     .top-bar,
@@ -215,11 +328,9 @@ header nav ul li {
     main {
         margin-bottom: auto;
     }
-
 }
 
-@media (min-width:1150px) {
-
+@media (min-width: 1150px) {
     nav,
     main {
         max-width: 1350px;
