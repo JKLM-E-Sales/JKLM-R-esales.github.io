@@ -1,0 +1,58 @@
+
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 400;
+    color: #74828f;
+}
+
+h1 {
+    color: #ef6351;
+}
+
+.main-button {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 20px;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    border: 1px solid black;
+    min-width: 120px;
+    text-align: center;
+}
+
+.main-button:visited {
+    color: white;
+}
+
+.main-button:hover {
+    opacity: 75%;
+}
+
+.main-input {
+    margin: 0.5rem 0;
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form-container p {
+    max-width: 300px;
+    text-align: center;
+}
