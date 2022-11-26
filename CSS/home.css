@@ -39,7 +39,7 @@
 
 .shop-button {
     border: 2px solid white;
-    transition: all 0.5s;
+    transition: all 500ms;
     background-color: rgba(0, 0, 0, 0.258);
     border-radius: 5px;
     padding: 0.5rem 1rem;
